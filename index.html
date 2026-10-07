@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advance Campus Placement Tracking System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand-block">
+        <p class="eyebrow">B.Tech Student Mini Project</p>
+        <h1>Advance Campus Placement Tracking System</h1>
+        <p class="subline">Validate profile readiness, drive eligibility, interview progress, HR schedules, and offers using demo localStorage.</p>
+      </div>
+      <div class="top-actions">
+        <span class="storage-chip">Demo storage: localStorage</span>
+        <button class="btn secondary" id="resetDemoBtn" type="button">Reset demo data</button>
+      </div>
+    </header>
+
+    <nav class="tabbar" aria-label="Main sections">
+      <button class="tab active" type="button" data-view="profile">Profile</button>
+      <button class="tab" type="button" data-view="progress">Progress</button>
+      <button class="tab" type="button" data-view="drives">Drive Eligibility</button>
+      <button class="tab" type="button" data-view="tests">Mock Tests</button>
+      <button class="tab" type="button" data-view="teacher">Placement Cell</button>
+    </nav>
+
+    <main id="app" class="page-area" aria-live="polite"></main>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
